@@ -4,16 +4,25 @@
 
 This project documents a vulnerability assessment performed from a local host (Nessus running locally) against a single Windows 10 virtual machine configured on a Host‑Only network. The goal is to discover, analyze, and remediate vulnerabilities and to produce evidence and a short remediation plan suitable for a portfolio or resume.
 
----
+<br>
 
-## Lab Topology
+## Objectives
 
-* **Host:** Your personal machine running Nessus (Essentials or Pro)
-* **Target:** Windows 10 VM (Host‑Only network)
+*	Configure Host-Only networking and a Windows 10 VM as the sole target.
+*	Install and configure Nessus on your host machine.
+*	Run an unauthenticated scan and a credentialed scan.
+*	Analyze vulnerabilities, export evidence, and produce a remediation summary.
+
+<br>
+
+## Environment:
+
+* **Host:** Windows 11 (Nessus running locally)
+* **Target:** Windows 10 VM, IP: 192.168.56.101 
 * **Virtualization:** VirtualBox
 * **Network:** Host‑Only adapter (isolated)
 
----
+<br>
 
 ## Quick Start
 
@@ -23,21 +32,7 @@ This project documents a vulnerability assessment performed from a local host (N
 4. Add SMB/WinRM credentials (local admin account) and run a credentialed scan.
 5. Export reports (PDF / CSV), capture screenshots.
 
----
-
-## Images / Screenshots (placeholders)
-
-Use these image filenames when adding screenshots to the `images/` folder in your repo.
-
-* `images/vm_network_config.png` — VM network settings showing Host‑Only adapter and IP.
-* `images/nessus_dashboard.png` — Nessus web UI / dashboard.
-* `images/basic_scan_summary.png` — Summary of Basic (unauthenticated) scan results.
-* `images/credentialed_scan_summary.png` — Summary of credentialed scan results.
-* `images/vulnerability_detail.png` — Example vulnerability detail page (plugin, CVE, remediation).
-* `images/remediation_evidence.png` — Evidence of remediation (Get‑HotFix output, Windows Update showing KB installed, PowerShell commands, etc.).
-* `images/rescan_summary.png` — Post‑remediation re‑scan summary.
-
----
+<br>
 
 ## **Procedures:**
 
