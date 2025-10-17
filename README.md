@@ -43,7 +43,7 @@ This project documents a vulnerability assessment performed from a local host (N
 * Create a local admin account for scans (example: `labadmin` / `P@ssw0rd!`).
 * Confirm VM IP with `ipconfig` (e.g., `192.168.56.101`).
 
-> *Image:* `![VM Network Configuration](images/vm_network_config.png)`
+<img src="images/vm_network_config.png" alt="VM Network Config" width="700"/>
 
 ### 2) Install & configure Nessus
 
@@ -108,38 +108,8 @@ Restart-Computer
 * Medium: 5
 * Low: 8
 
-**Outcome:** Reduced high severity findings by 100% after applying patches and configuration changes (re-scan validated).
 
----
 
-## Repo Structure
 
-```
-Nessus-Vulnerability-Scan/
-├─ images/
-│  ├─ vm_network_config.png
-│  ├─ nessus_dashboard.png
-│  ├─ basic_scan_summary.png
-│  ├─ credentialed_scan_summary.png
-│  ├─ vulnerability_detail.png
-│  ├─ remediation_evidence.png
-│  └─ rescan_summary.png
-├─ remediation_plan.md
-└─ README.md
-```
 
----
 
-## Resume Bullet (copy & edit)
-
-* Executed Nessus vulnerability scans (unauthenticated + credentialed) against an isolated Windows 10 lab VM; analyzed findings, prioritized remediation by CVSS, implemented fixes, and validated remediation via re-scan.
-
----
-
-## License
-
-This project is provided for educational purposes. Replace / add a license as desired.
-
----
-
-*Generated README template — add your screenshots to `images/` and replace placeholder counts and KB numbers with your lab results before publishing.*
